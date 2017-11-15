@@ -23,4 +23,4 @@ Deterministic	 : 	In this mode, all inter-arrival times are equal to 1/lambda se
 Trace-driven	 : 	In this mode, the emulation uses a trace specification file. Each line in the trace file specifies the inter-arrival time of a packet, the number of tokens it needs in order for it to be eligiable for transmission, and its service time.
 
 
-https://user-images.githubusercontent.com/25571819/32829981-9b664f76-c9a8-11e7-8ae8-576904d05193.png
+![Alt text](https://user-images.githubusercontent.com/25571819/32829981-9b664f76-c9a8-11e7-8ae8-576904d05193.png "Token Bucket Filter")
