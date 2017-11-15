@@ -4,6 +4,8 @@ Emulated a traffic shaper to transmit packets by a token bucket filter using mul
 
 The token bucket has a capacity (bucket depth) of B tokens. Tokens arrive into the token bucket according to an unusual arrival process where the inter-arrival time between two consecutive tokens is 1/r. The token arrival rate (the tokens arrive at a constant rate of r). Extra tokens (overflow) would simply disappear if the token bucket is full. A token bucket, together with its control mechanism, is referred to as a token bucket filter.
 
+https://user-images.githubusercontent.com/25571819/32829981-9b664f76-c9a8-11e7-8ae8-576904d05193.png
+
 Four threads where used in this program:
 1. Packet thread
 2. Token Thread
