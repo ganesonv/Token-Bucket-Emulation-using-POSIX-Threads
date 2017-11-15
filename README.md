@@ -4,6 +4,8 @@ Emulated a traffic shaper to transmit packets by a token bucket filter using mul
 
 The token bucket has a capacity (bucket depth) of B tokens. Tokens arrive into the token bucket according to an unusual arrival process where the inter-arrival time between two consecutive tokens is 1/r. The token arrival rate (the tokens arrive at a constant rate of r). Extra tokens (overflow) would simply disappear if the token bucket is full. A token bucket, together with its control mechanism, is referred to as a token bucket filter.
 
+![Alt text](https://user-images.githubusercontent.com/25571819/32829981-9b664f76-c9a8-11e7-8ae8-576904d05193.png "Token Bucket Filter")
+
 Four threads where used in this program:
 1. Packet thread
 2. Token Thread
@@ -21,6 +23,3 @@ This system can run in only one of two modes.
 Deterministic	 : 	In this mode, all inter-arrival times are equal to 1/lambda seconds, all packets require exactly P tokens, and all service times are equal to 1/mu seconds (all rounded to the nearest millisecond). If 1/lambda is greater than 10 seconds, inter-arrival time of 10 seconds. If 1/mu is greater than 10 seconds, service time is of 10 seconds.
  
 Trace-driven	 : 	In this mode, the emulation uses a trace specification file. Each line in the trace file specifies the inter-arrival time of a packet, the number of tokens it needs in order for it to be eligiable for transmission, and its service time.
-
-
-![Alt text](https://user-images.githubusercontent.com/25571819/32829981-9b664f76-c9a8-11e7-8ae8-576904d05193.png "Token Bucket Filter")
